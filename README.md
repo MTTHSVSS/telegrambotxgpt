@@ -1,11 +1,13 @@
-# Telegram x GPT 
+# Telegram x GPT
+
+Note: This README was created by ChatGPT.
 
 This bot is a simple Telegram bot that uses the OpenAI API to generate responses to user messages.
 
 ## Features
 Uses the OpenAI API to generate natural language responses to user messages.
 Can answer questions, carry on a conversation, and more.
-Getting Started
+##Getting Started
 To get started with the Telegram X OpenAI Bot, you will need to:
 
 Create a Telegram bot by talking to the BotFather and get the API token.
@@ -23,10 +25,8 @@ Once the bot is running, you can interact with it by sending messages to your Te
 
 If you have any issues or questions, feel free to open an issue in the repository or contact me.
 
-Contributing
+##Contributing
 If you would like to contribute to this project, please feel free to open a pull request or contact me.
 
-License
+##License
 This project is licensed under the MIT License.
-
-This is a basic template for your readme file, you can include more information, images, links, etc. Make sure to keep your readme file clear and easy to understand.
