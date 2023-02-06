@@ -9,7 +9,7 @@ A bot that generates natural language responses using the OpenAI API for user me
 ## Getting Started
 You will need a Telegram Account and access to a OPENAI API key.
 
-First, you will need to create a bot talking to the BotFather. He will provide you with a token.
+First, you will need to create a bot talking to the BotFather (http://rb.gy/md1zj6). He will provide you with a token.
 
 Afterward, you will need to create an API key at https://rb.gy/pqmtlx.
 
