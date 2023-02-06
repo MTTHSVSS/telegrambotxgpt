@@ -1,6 +1,6 @@
 # Telegram x GPT
 
-Note: This README was created by ChatGPT.
+Note: This README was party created by ChatGPT.
 
 This bot is a simple Telegram bot that uses the OpenAI API to generate responses to user messages.
 

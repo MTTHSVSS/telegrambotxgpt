@@ -10,15 +10,15 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a Telegrambot using GPT3. What can I do for you?")
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    openai.api_key = "<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>"
+    openai.api_key = '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'
 
     response_text = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=update.message.text,
-        max_tokens=100,
+        max_tokens=750,
         n=1,
         stop=None,
         temperature=0.5,
@@ -47,12 +47,12 @@ if __name__ == '__main__':
     application = ApplicationBuilder().token('5836563749:AAHt9P5W26lBk_g9BtEpNrWKMeSU0M1dGwA').build()
 
     start_handler = CommandHandler('start', start)
-    echo = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
+    echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
     caps_handler = CommandHandler('caps', caps)
     inline_caps_handler = InlineQueryHandler(inline_caps)
 
     application.add_handler(start_handler)
-    application.add_handler(echo)
+    application.add_handler(echo_handler)
     application.add_handler(caps_handler)
     application.add_handler(inline_caps_handler)
     
